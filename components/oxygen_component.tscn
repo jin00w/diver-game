@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://daneuj7vq1w2k"]
+
+[ext_resource type="Script" uid="uid://4phg1x2dt1xj" path="res://oxygen_component.gd" id="1_jfwau"]
+
+[node name="OxygenComponent" type="Node"]
+script = ExtResource("1_jfwau")
