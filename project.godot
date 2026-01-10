@@ -13,7 +13,6 @@ config_version=5
 config/name="2d_diving_demo"
 run/main_scene="uid://d2oemyqp5b5ir"
 config/features=PackedStringArray("4.5", "GL Compatibility")
-config/icon="res://icon.svg"
 
 [autoload]
 
@@ -21,7 +20,7 @@ PhantomCameraManager="*res://addons/phantom_camera/scripts/managers/phantom_came
 
 [editor_plugins]
 
-enabled=PackedStringArray("res://addons/phantom_camera/plugin.cfg")
+enabled=PackedStringArray()
 
 [input]
 

@@ -1,68 +1,69 @@
-[gd_scene load_steps=26 format=3 uid="uid://d2oemyqp5b5ir"]
+[gd_scene load_steps=29 format=3 uid="uid://d2oemyqp5b5ir"]
 
-[ext_resource type="PackedScene" uid="uid://bqfxgdm7gv2hq" path="res://components/controllable_components.tscn" id="1_7gkto"]
-[ext_resource type="Texture2D" uid="uid://fm2cyrryw10s" path="res://assets/underwater-diving-files/starry-night.jpg" id="1_x34r7"]
-[ext_resource type="Texture2D" uid="uid://diqt2kw6ahv07" path="res://assets/underwater-diving-files/PNG/player/player-swiming.png" id="2_gpk0s"]
-[ext_resource type="Texture2D" uid="uid://ebum1ei0msgv" path="res://assets/underwater-diving-files/PNG/player/player-idle.png" id="2_nk4ej"]
-[ext_resource type="PackedScene" uid="uid://c7nyrgho3fcwv" path="res://components/movement_component.tscn" id="2_s6vdp"]
-[ext_resource type="Texture2D" uid="uid://dacec6trlhb3g" path="res://assets/Underwater Fantasy/PNG/underwater-fantasy-preview.png" id="3_1inox"]
-[ext_resource type="PackedScene" uid="uid://d3tmkhywfetcx" path="res://components/animated_component.tscn" id="6_0jip1"]
-[ext_resource type="Script" uid="uid://hobiyi04qptc" path="res://scripts/camera.gd" id="7_0jip1"]
-[ext_resource type="PackedScene" uid="uid://daneuj7vq1w2k" path="res://components/oxygen_component.tscn" id="8_ycrjs"]
+[ext_resource type="Texture2D" uid="uid://fm2cyrryw10s" path="res://assets/underwater-diving-files/starry-night.jpg" id="1_3munq"]
+[ext_resource type="Texture2D" uid="uid://dacec6trlhb3g" path="res://assets/Underwater Fantasy/PNG/underwater-fantasy-preview.png" id="2_2b3i1"]
+[ext_resource type="Texture2D" uid="uid://ebum1ei0msgv" path="res://assets/underwater-diving-files/PNG/player/player-idle.png" id="3_ekirx"]
+[ext_resource type="Texture2D" uid="uid://diqt2kw6ahv07" path="res://assets/underwater-diving-files/PNG/player/player-swiming.png" id="4_yoi4e"]
+[ext_resource type="PackedScene" uid="uid://bqfxgdm7gv2hq" path="res://components/controllable_components.tscn" id="5_nhn5y"]
+[ext_resource type="PackedScene" uid="uid://c7nyrgho3fcwv" path="res://components/movement_component.tscn" id="6_t5vqt"]
+[ext_resource type="PackedScene" uid="uid://d3tmkhywfetcx" path="res://components/animated_component.tscn" id="7_prd0f"]
+[ext_resource type="PackedScene" uid="uid://daneuj7vq1w2k" path="res://components/oxygen_component.tscn" id="8_dl23u"]
+[ext_resource type="Script" uid="uid://hobiyi04qptc" path="res://scripts/camera.gd" id="9_6scvt"]
+[ext_resource type="Script" uid="uid://dug5r0us5qv1w" path="res://scripts/oxygen_bar.gd" id="10_l2j0b"]
 
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_0jip1"]
 distance = 1.0
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_0jip1"]
-atlas = ExtResource("2_nk4ej")
+atlas = ExtResource("3_ekirx")
 region = Rect2(400, 0, 80, 80)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_x34r7"]
-atlas = ExtResource("2_nk4ej")
+atlas = ExtResource("3_ekirx")
 region = Rect2(320, 0, 80, 80)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_ycrjs"]
-atlas = ExtResource("2_nk4ej")
+atlas = ExtResource("3_ekirx")
 region = Rect2(240, 0, 80, 80)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_2gmnq"]
-atlas = ExtResource("2_nk4ej")
+atlas = ExtResource("3_ekirx")
 region = Rect2(160, 0, 80, 80)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_b86hy"]
-atlas = ExtResource("2_nk4ej")
+atlas = ExtResource("3_ekirx")
 region = Rect2(80, 0, 80, 80)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_iixt5"]
-atlas = ExtResource("2_nk4ej")
+atlas = ExtResource("3_ekirx")
 region = Rect2(0, 0, 80, 80)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_0ptjt"]
-atlas = ExtResource("2_gpk0s")
+atlas = ExtResource("4_yoi4e")
 region = Rect2(0, 0, 80, 80)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_02gqx"]
-atlas = ExtResource("2_gpk0s")
+atlas = ExtResource("4_yoi4e")
 region = Rect2(80, 0, 80, 80)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_25nao"]
-atlas = ExtResource("2_gpk0s")
+atlas = ExtResource("4_yoi4e")
 region = Rect2(160, 0, 80, 80)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_jtpc8"]
-atlas = ExtResource("2_gpk0s")
+atlas = ExtResource("4_yoi4e")
 region = Rect2(240, 0, 80, 80)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_cawoi"]
-atlas = ExtResource("2_gpk0s")
+atlas = ExtResource("4_yoi4e")
 region = Rect2(320, 0, 80, 80)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_cyo76"]
-atlas = ExtResource("2_gpk0s")
+atlas = ExtResource("4_yoi4e")
 region = Rect2(400, 0, 80, 80)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_an3ah"]
-atlas = ExtResource("2_gpk0s")
+atlas = ExtResource("4_yoi4e")
 region = Rect2(480, 0, 80, 80)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_jwvn1"]
@@ -121,12 +122,18 @@ animations = [{
 radius = 6.0
 height = 22.0
 
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_3munq"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_2b3i1"]
+bg_color = Color(1, 1, 1, 0.6666667)
+
 [node name="TestTank" type="Node2D"]
 
 [node name="StarryNight" type="Sprite2D" parent="."]
 position = Vector2(595, -154)
 scale = Vector2(0.545, 0.545)
-texture = ExtResource("1_x34r7")
+texture = ExtResource("1_3munq")
 
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
 
@@ -149,7 +156,7 @@ shape = SubResource("WorldBoundaryShape2D_0jip1")
 position = Vector2(578, 843)
 rotation = 1.5707964
 scale = Vector2(2.195, 2.195)
-texture = ExtResource("3_1inox")
+texture = ExtResource("2_2b3i1")
 
 [node name="PlayerBody" type="CharacterBody2D" parent="."]
 position = Vector2(571, 321)
@@ -164,13 +171,33 @@ animation = &"swim"
 rotation = 1.5707964
 shape = SubResource("CapsuleShape2D_f5vx7")
 
-[node name="ControlComponent" parent="PlayerBody" instance=ExtResource("1_7gkto")]
+[node name="ControlComponent" parent="PlayerBody" instance=ExtResource("5_nhn5y")]
 
-[node name="MovementComponent" parent="PlayerBody" instance=ExtResource("2_s6vdp")]
+[node name="MovementComponent" parent="PlayerBody" instance=ExtResource("6_t5vqt")]
 
-[node name="AnimatedComponent" parent="PlayerBody" instance=ExtResource("6_0jip1")]
+[node name="AnimatedComponent" parent="PlayerBody" instance=ExtResource("7_prd0f")]
 
-[node name="OxygenComponent" parent="PlayerBody" instance=ExtResource("8_ycrjs")]
+[node name="OxygenComponent" parent="PlayerBody" instance=ExtResource("8_dl23u")]
 
 [node name="Camera2D" type="Camera2D" parent="PlayerBody"]
-script = ExtResource("7_0jip1")
+script = ExtResource("9_6scvt")
+
+[node name="OxygenBar" type="Node2D" parent="PlayerBody"]
+script = ExtResource("10_l2j0b")
+
+[node name="ProgressBar" type="ProgressBar" parent="PlayerBody/OxygenBar"]
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = 10.0
+offset_top = 9.0
+offset_right = 30.0
+offset_bottom = 10.737061
+grow_horizontal = 2
+grow_vertical = 0
+rotation = 3.1415927
+theme_override_styles/background = SubResource("StyleBoxFlat_3munq")
+theme_override_styles/fill = SubResource("StyleBoxFlat_2b3i1")
+show_percentage = false
